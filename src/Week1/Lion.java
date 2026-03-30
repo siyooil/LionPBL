@@ -22,16 +22,19 @@ public class Lion {
         // 불필요한 this. 제거
         if(!isValidLionNumberInput())
             printErrorMessage();
-        inputLionNames();
-        printLionNames();
+        else{
+            inputLionNames();
+            printLionNames();
+        }
     }
+
 
     public boolean isValidLionNumberInput() {
         System.out.println(LION_EMOJI + WELCOME_COMMENT);
         lionNum = input.nextInt(); // shadowing(중복 선언)이 없으므로 this 없이 필드에 바로 저장 가능
         input.nextLine(); // 버퍼 비우기
 
-        return !(lionNum >= 5);
+        return lionNum >= 5;
     }
 
     public void printErrorMessage() {
