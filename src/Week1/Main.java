@@ -3,8 +3,8 @@ package Week1;
 
 public class Main {
     public static void main(String[] args) {
-        LionBonus lion = new LionBonus();
+        Lion lion = new Lion();
         lion.run();
+        // lion bonus 객체
     }
-
 }
